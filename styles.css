@@ -1,0 +1,174 @@
+/* 定義動畫 */
+@keyframes slideInRight {
+    /* 從左邊滑入到右邊 */
+    from {
+      transform: translateX(-100%); /* 初始位置為向左偏移100% */
+    }
+    to {
+      transform: translateX(0); /* 終點位置為不偏移，即回到原始位置 */
+    }
+  }
+  
+  /* 應用動畫到元素 */
+  .slide-in-right {
+    animation: slideInRight 1s ease-in-out; /* 應用名為slideInRight的動畫，持續時間為1秒，緩入緩出的方式執行 */
+  }
+/* 定義動畫 */
+@keyframes slideInLEFT {
+    /* 從左邊滑入到右邊 */
+    from {
+      transform: translateX(100%); /* 初始位置為向右偏移100% */
+    }
+    to {
+      transform: translateX(0); /* 終點位置為不偏移，即回到原始位置 */
+    }
+  }
+  
+  /* 應用動畫到元素 */
+  .slide-in-left {
+    animation: slideInLEFT 0.8s ease-in-out; /* 應用名為slideInRight的動畫，持續時間為1秒，緩入緩出的方式執行 */
+  }
+  @keyframes slideInTOP {
+    /* 從右滑入到左邊 */
+    from {
+      transform: translateY(100%); /* 初始位置為向右偏移100% */
+    }
+    to {
+      transform: translateY(0); /* 終點位置為不偏移，即回到原始位置 */
+    }
+  }
+  
+  /* 應用動畫到元素 */
+  .slide-in-top1 {
+    animation: slideInTOP 1s ease-in-out; /* 應用名為slideInRight的動畫，持續時間為1秒，緩入緩出的方式執行 */
+  }
+  .slide-in-top2 {
+    animation: slideInTOP 1.5s ease-in-out; /* 應用名為slideInRight的動畫，持續時間為1秒，緩入緩出的方式執行 */
+  }
+  .slide-in-top3 {
+    animation: slideInTOP 2s ease-in-out; /* 應用名為slideInRight的動畫，持續時間為1秒，緩入緩出的方式執行 */
+  }
+  body {
+    background-color: rgb(17, 24, 39) !important;
+}
+
+.header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+}
+
+.content {
+    margin-top: 45px; /* 為了避免網頁內容被頭部擋住，設定一個上邊距 */
+    /* 其他樣式設定 */
+}
+
+.wrap {
+    width: 1000px;
+    display: flex;
+}
+
+.w35 {
+    width: 35%;
+}
+
+.w65 {
+    width: 65%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.card-img {
+    max-width: 50%;
+}
+
+.color {
+    background-color: rgb(17, 24, 39);
+}
+
+.card-color {
+    background-color: rgb(160, 160, 160);
+}
+
+.left-align {
+    justify-content: flex-start;
+}
+.logo-img {
+  max-width: 5%;
+}
+.display {
+  display: none;
+}
+
+/* 當螢幕寬度小於600px時，顯示手風琴 */
+@media screen and (max-width: 600px) {
+  .display {
+    display: block;
+  }
+}
+
+#accordionExample .accordion-button {
+  color:#0dcaf0; /* 設定手風琴標題文字顏色為紅色 */
+  background-color: rgb(17, 24, 39); /* 設定手風琴標題背景色 */
+  }
+
+.accordion-body {
+  color: white; /* 設定手風琴內容文字顏色為白色 */
+  background-color: #343a40; /* 設定手風琴內容背景色 */
+  }
+/* 彈跳動畫 */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* ... 其他CSS代碼 ... */
+
+/* 定義縮放動畫 */
+@keyframes zoomIn {
+  from {
+      transform: scale(1); /* 初始縮放比例為1，即原大小 */
+  }
+  to {
+      transform: scale(1.1); /* 最終縮放比例為1.1，放大10% */
+  }
+}
+
+/* 將動畫應用到元素 */
+.zoom-in {
+  animation: zoomIn 1s ; /* 使用zoomIn動畫，持續時間為1秒，無限循環，來回交替播放 */
+}
+/* 定义跳跃动画 */
+@keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* 初始位置和结束位置为不偏移，即原始位置 */
+  }
+  40% {
+      transform: translateY(-30px); /* 在40%的关键帧位置，向上跳跃30px */
+  }
+  60% {
+      transform: translateY(-15px); /* 在60%的关键帧位置，向上跳跃15px */
+  }
+}
+
+/* 将动画应用到元素 */
+.jump {
+  animation: jump 1s ; /* 使用jump动画，持续时间为1秒，緩入緩出的方式播放，无限循环 */
+}
+
+
+
+
+
+
+
+  
